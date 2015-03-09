@@ -1,0 +1,577 @@
+
+/* 
+/* visual styles */
+.element {
+    width:100%;
+    max-width: 299px;
+    height:180px;
+    max-height: 180px;
+}
+.element-0, .element-1 {
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-right:1px solid white;
+    border-left:1px solid white;
+    cursor:pointer;
+    background:#ededed;
+    background:-webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+    background:-moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+    background:-ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+.element:hover .element-0,
+.element:hover .element-1 {
+    border-right:1px solid white;
+    border-left:1px solid white;;
+}
+
+/* content styles */
+.element-0, .element-1 {
+    display:table;
+}
+.content-0, .content-1 {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+.content-0:before {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:12px;
+    letter-spacing:1px;
+    color:#747474;
+}
+.content-1:before {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:12px;
+    letter-spacing:1px;
+    color:#747474;
+}
+
+/* animations setup and on mouse out */
+.element {
+    -webkit-perspective:800px;
+    perspective:800px;
+}
+.element .element-0 {
+    opacity:1;
+    -webkit-perspective:800px;
+    perspective:800px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transform:rotateX(0deg);
+    transform:rotateX(0deg);
+    -webkit-transition:all 0.8s cubic-bezier(0,.63,.41,.98) 0.8s;
+    transition:all 0.8s cubic-bezier(0,.63,.41,.98) 0.8s;
+}
+.element .element-1 {
+    opacity:0.6;
+    -webkit-perspective:800px;
+    perspective:800px;;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transform:rotateX(-90deg) scale(0.6);
+    transform:rotateX(-90deg) scale(0.6);
+    -webkit-transition:all 0.8s cubic-bezier(.64,.01,.98,.38);
+    transition:all 0.8s cubic-bezier(.64,.01,.98,.38);
+}
+
+/* animations on mouse hover */
+.element:hover .element-0 {
+    opacity:0.6;
+    -webkit-transform:rotateX(-90deg) scale(0.6);
+    transform:rotateX(-90deg) scale(0.6);
+    -webkit-transition:all 0.4s cubic-bezier(.64,.01,.98,.38);
+    transition:all 0.4s cubic-bezier(.64,.01,.98,.38);
+}
+.element:hover .element-1 {
+    opacity:1;
+    -webkit-transform:rotateX(0deg) scale(1);
+    transform:rotateX(0deg) scale(1);
+    -webkit-transition:all 0.4s cubic-bezier(0,.63,.41,.98) 0.4s;
+    transition:all 0.4s cubic-bezier(0,.63,.41,.98) 0.4s;
+}
+
+/* centering styles for jsbin */
+
+.element {
+    margin:0 auto; 
+}
+
+.grey{
+    color: #66757f;
+}
+
+ 
+.blue {
+    color: cornflowerblue;
+} 
+
+
+.color_blue {
+    color: #0084B4;
+} 
+
+.shadow{
+    -webkit-box-shadow: inset 1px 1px 197px 80px rgba(255,255,255,0.55);
+    -moz-box-shadow: inset 1px 1px 197px 80px rgba(255,255,255,0.55);
+    box-shadow: inset 1px 1px 197px 80px rgba(255,255,255,0.55);
+}
+
+
+.shadow-3 {
+-webkit-box-shadow: 10px 10px 160px 0px rgba(255,255,255,0.88);
+-moz-box-shadow: 10px 10px 160px 0px rgba(255,255,255,0.88);
+box-shadow: 10px 10px 160px 0px rgba(255,255,255,0.88);
+}
+
+.shadow-4 {
+background-color: white;
+opacity: 0.7;
+}
+
+
+.margin-top5 {
+	margin-top: 5%;
+}
+
+.margin-top2 {
+    margin-top: 20px;
+}
+
+
+/*  HOME PAGE COLOCACION FIRST*/
+.image1 {
+    background-image: url(images/colocacion-box-1.jpg);
+}
+
+/* HOME PAGE COLOCACION SECOND */
+.image2 {
+    background-image: url(images/colocacion-box-2.jpg);
+}
+
+
+/*  Front Image Main Content*/
+.image5 {
+    background-image: url(images/front.jpg);
+}
+
+/*  Back Image main content*/
+.image6 {
+    background-image: url(images/back.jpg);
+}
+
+/*  HOME PAGE PLASTIFICADO SECOND*/
+.image7 {
+    background-image: url(images/plastificado-box-1.jpg);
+}
+
+/*  HOME PAGE PLASTIFICADO FIRST*/
+.image8 {
+    background-image: url(images/plastificado-box-2.jpg);
+}
+
+/* HOME PAGE PULIDO FIRST */
+.image9 {
+    background-image: url(images/pulido-box-2.jpg);
+}
+
+/*  HOME PAGE PULIDO SECOND */
+.image10 {
+    background-image: url(images/pulido-box-1.jpg);
+}
+
+/* CONTACT IMAGE */
+.image11 {
+    background-image: url(images/contact-image.jpeg);
+}
+
+/*  HOME PAGE CONTACT FIRST*/
+.image12 {
+    background-image: url(images/floor1-box.jpg);
+}
+
+/*  HOME PAGE CONTACT SECOND*/
+.image13 {
+    background-image: url(images/conocenos.jpg);
+}
+
+/* HOME PAGE VENTAS FIRST */
+.image14 {
+    background-image: url(images/piso-box-1.jpg);
+}
+
+/*  HOME PAGE VENTAS SECOND*/
+.image15 {
+    background-image: url(images/piso-box-2.jpg);
+}
+
+/*  HOME PAGE HIDROLAQUEADO FIRST*/
+.image16 {
+    background-image: url(images/hidro-box-1.jpg);
+}
+
+/*  HOME PAGE HIDROLAQUEADO SECOND*/
+.image17 {
+    background-image: url(images/hidro-box-2.jpg);
+}
+
+/*  PULIDO FIRST IMAGE*/
+.image18 {
+    background-image: url(images/pulido/pulido4.jpg);
+    max-width: 800px;
+    height: 400px;
+}
+
+/*  PULIDO PARA CERA*/
+.image19 { 
+background-image: url(./images/pulido/pulidocera.jpg);
+max-width: 1190px;
+max-height:823px;
+}
+
+/*  PULIDO SELLADOR*/
+.image20 { 
+background-image: url(./images/pulido/pulidosellador.jpg);
+max-width: 1190px;
+max-height:823px;
+}
+
+
+.white {
+    background-color: white;
+}
+
+.currentcolor {
+    background-color: currentcolor;
+} 
+
+.white-text {
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bolder;
+}
+
+
+/* #E74C3Coldred color */  
+.red-button {
+    background-color:#DC5537 ;
+    color: white;
+    font-family:'PT Sans Narrow', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+.red-button-selected{
+    background-color:white;
+    color: #9c3318;
+    font-family:'PT Sans Narrow', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #E74C3C;
+
+}
+
+.red-button-selected:hover {
+    background-color:white;
+    color: #E74C3C;
+    font-family:'PT Sans Narrow', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #E74C3C;
+    text-decoration: none;
+}
+
+.red-button-inverse{
+    background-color: white;
+    color: black;
+    font-family: 'Voltaire', sans-serif;
+    opacity: 0.85;
+    text-transform: uppercase;
+}
+
+.red-button:hover {
+    background-color: white;
+    color: #DC5537;
+    font-family: 'Voltaire', sans-serif;
+    font-weight: bolder;
+    border-color: #E74C3C;
+
+}
+
+.social-btn {
+    background-color: white;
+    border:none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.social-btn:hover {
+    background-color: white;
+    border:none;
+}
+
+.social-btn-big:hover {
+    background-color: white;
+    border:none;
+     -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+
+@media (min-width:1200px){
+  body {
+    padding-top: 99px;
+    padding-bottom: 1px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 99px;
+    padding-bottom: 1px;
+  }
+}
+
+
+@media (max-width: 980px) {
+  body {
+    padding-top: 99px;
+    padding-bottom: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 99px;
+    padding-bottom: 1px;
+  }
+}
+
+
+@media (max-width:640px){
+  body {
+    padding-top: 114px;
+    padding-bottom: 1px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 144px;
+    padding-bottom: 1px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 144px;
+    padding-bottom: 1px;
+  }
+}
+
+
+.container {
+    width: 100%;
+}
+
+.brand_image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+
+}
+
+.facebook-logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    min-width: 95px;
+
+}
+
+.images {
+    max-width: 100%;
+    height: auto;
+    border:1px solid grey;
+}
+
+
+.navbar-default {
+background-color: white;
+border-color: #e7e7e7;
+}
+
+.black  {
+
+color:#000;
+
+}
+
+
+.black-contact {
+
+background-color: white;
+color:#000;
+cursor: auto;
+border: none;
+text-align: right;
+font-size: 18px;
+font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+.black-contact:hover {
+
+background-color: white;
+color:#000;
+cursor: auto;
+border: none;
+text-align: right;
+font-size: 19px;
+font-family: 'PT Sans Narrow', sans-serif;
+text-decoration: none;
+
+
+}
+
+.row-with-height{
+
+min-height: 35px;
+}
+
+
+
+.footer-top-height{
+
+min-height: 15px;
+background: #E74C3C;
+}
+
+.footer-small-font {
+
+color: white;
+margin: 2px;
+font-family:'PT Sans Narrow', sans-serif;
+font-size: 15px;
+
+}
+
+
+.footer-big-font {
+
+color: white;
+font-weight: normal;
+font-family:'PT Sans Narrow', sans-serif;
+margin: 2px;
+margin-top: 10px;
+
+}
+
+a.nounderline:link   
+{   
+ text-decoration:none;  
+} 
+
+.red-hover:hover { 
+color: #E74C3C;
+} 
+
+
+.poweraded {
+
+font-family: 'PT Sans Narrow', sans-serif;
+color: #E74C3C ;
+text-align: right;
+font-size: 14px;
+cursor:pointer;
+}
+
+.poweraded:hover {
+
+color: #428bca ;
+}
+
+
+#page-content {
+
+margin-left: 30px ;
+margin-right: 30px;
+padding-left: 20px;
+padding-right: 20px;
+box-sizing: border-box;
+border-left:1px solid whitesmoke;
+border-right:1px solid whitesmoke;
+min-height: 480px;
+} 
+
+
+.btn-primary {
+    margin-bottom: 5px;
+}
+
+
+.border-white {
+border-left: 2px solid white;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+}
+
+.border-white-top {
+border-left: 2px solid white;
+border-top: 2px solid white;
+border-right: 2px solid white;
+}
+
+.border-white-sides{
+border-left: 2px solid white;
+border-right: 2px solid white;
+}
+
+.border-white-all {
+border: 2px solid white;
+}
+
+
+blockquote {
+border-left:none;
+}
+
+.welcome{
+text-align: center;
+font-family: 'Voltaire', sans-serif;
+text-transform: uppercase;
+color:black;
+}
+
+.welcome2{
+font-family: 'Voltaire', sans-serif;
+color: black;
+}
+
+.font {
+font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+.font-black {
+font-family: 'PT Sans Narrow', sans-serif;
+color: black;
+
+}
+
+a {
+    color:royalblue;
+}
+
+a:hover {
+    color:orangered;
+}
